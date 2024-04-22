@@ -1,7 +1,10 @@
 package com.joblisting.jobportalbackend.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Arrays;
 
+@Document(collection = "JobPost")
 public class Post {
     private String profile;
     private String desc;
